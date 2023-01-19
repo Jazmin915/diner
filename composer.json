@@ -1,0 +1,12 @@
+{
+  "name": "jgonzalez/328/diner",
+  "authors": [
+    {
+      "name": "Jazmin Gonzalez",
+      "email": "gonzalez.jazmin@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
