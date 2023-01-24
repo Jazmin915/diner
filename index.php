@@ -12,7 +12,7 @@ require_once('vendor/autoload.php');
 $f3 = Base::instance();
 // Java equivalent -> Base f3 = new Base();
 
-// Define a default route ("home page" for diner/328)
+// Define a default route ("home page" for 328/diner)
 $f3->route('GET /', function () {
 
     //Instantiate a view
@@ -22,6 +22,24 @@ $f3->route('GET /', function () {
 });
 
 
+// a breakfast route (328/diner/breakfast)
+$f3->route('GET /breakfast', function () {
+
+    //Instantiate a view
+    //Template is a class in the fat free framework
+    $view = new Template();
+    echo $view->render("views/breakfast.html");
+});
+
+
+// a lunch route (328/diner/lunch)
+$f3->route('GET /lunch', function () {
+
+    //Instantiate a view
+    //Template is a class in the fat free framework
+    $view = new Template();
+    echo $view->render("views/lunch.html");
+});
 
 //Run Fat-free
 $f3->run();
